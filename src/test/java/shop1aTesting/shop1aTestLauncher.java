@@ -1,12 +1,11 @@
 package shop1aTesting;
 
-import com.codeborne.selenide.Configuration;
 import org.junit.jupiter.api.Test;
 import shop1aTesting.pages.cartPage;
 import shop1aTesting.pages.goodsPage;
 import shop1aTesting.pages.homePage;
 
-import static com.codeborne.selenide.Selenide.open;
+
 
 public class shop1aTestLauncher {
     @Test
@@ -16,8 +15,9 @@ public class shop1aTestLauncher {
       goodsPage.ssdDiskSelect();
       goodsPage.goodsPageSort();
       goodsPage.goodsSelect();
+      goodsPage.validateItem();
       cartPage.enterEmail("konre93@gmail.com");
-      cartPage.fillDelivery();
+      cartPage.fillDelivery("Test","Test2","22222222");
 
     }
 
