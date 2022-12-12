@@ -4,18 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="99afb1dc-fdd9-4d14-b94c-cd3f0670d919" name="Changes" comment="test">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/shop1aTesting/steps/cartPageSteps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/shop1aTesting/steps/goodsPageSteps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/shop1aTesting/steps/homePageSteps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/shop1aTesting.feature" afterDir="false" />
+    <list default="true" id="99afb1dc-fdd9-4d14-b94c-cd3f0670d919" name="Changes" comment="Final project">
+      <change afterPath="$PROJECT_DIR$/src/test/java/shop1aTesting/launcher/shop1aTestLauncher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/shop1aTesting/models/DeliveryPriceModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/shop1aTesting/models/ItemModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/shop1aTesting/models/UserModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/shop1aTesting/pages/DeliveryPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/shop1aTesting/pages/ItemPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/shop1aTesting/steps/DeliveryPageSteps.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/shop1aTesting/steps/UserInfoSteps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/shop1aTesting/pages/cartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/shop1aTesting/pages/cartPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/shop1aTesting/pages/goodsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/shop1aTesting/pages/goodsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/shop1aTesting/pages/homePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/shop1aTesting/pages/homePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/shop1aTesting/shop1aTestLauncher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/shop1aTesting/shop1aTestLauncher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/shop1aTesting/pages/cartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/shop1aTesting/pages/UserInfoPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/shop1aTesting/pages/goodsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/shop1aTesting/pages/GoodsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/shop1aTesting/pages/homePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/shop1aTesting/pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/shop1aTesting/shop1aTestLauncher.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/shop1aTesting/steps/cartPageSteps.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/shop1aTesting/steps/goodsPageSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/shop1aTesting/steps/GoodsPageSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/shop1aTesting/steps/homePageSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/shop1aTesting/steps/HomePageSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/shop1aTesting.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/shop1aCart.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,13 +59,13 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "last_opened_file_path": "C:/Users/Konstantin/IdeaProjects/shop1aTest/src/test/java/shop1aTesting/steps",
-    "settings.editor.selected.configurable": "editor.preferences.tabs"
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
   }
 }]]></component>
-  <component name="RunManager" selected="Cucumber Java.Feature: shop1aTesting">
+  <component name="RunManager" selected="JUnit.shop1aTestLauncher">
     <configuration name="Feature: shop1aTesting" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/shop1aTesting.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/shop1aCart.feature" />
       <option name="GLUE" value="shop1aTesting.steps" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="shop1aTest.test" />
@@ -78,12 +85,13 @@
     </configuration>
     <configuration name="Scenario: Home page functionality" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/shop1aTesting.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/shop1aCart.feature" />
       <option name="GLUE" value="shop1aTesting.steps" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="shop1aTest.test" />
       <option name="NAME_FILTER" value="^Home page functionality$" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Home page functionality$&quot;" />
+      <shortenClasspath name="NONE" />
       <option name="SUGGESTED_NAME" value="Scenario: Home page functionality" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
@@ -95,6 +103,29 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="shop1aTestLauncher (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;shop1aTesting.launcher.shop1aTestLauncher&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
     </configuration>
     <configuration name="shop1aTestLauncher" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -119,40 +150,34 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="shop1aTestLauncher.shop1aPage" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;shop1aTesting.shop1aTestLauncher.shop1aPage&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
+    <configuration name="shop1aTestLauncher" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="shop1aTest.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="shop1aTesting.launcher.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="shop1aTesting.launcher" />
+      <option name="MAIN_CLASS_NAME" value="shop1aTesting.launcher.shop1aTestLauncher" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <list>
       <item itemvalue="Cucumber Java.Feature: shop1aTesting" />
       <item itemvalue="Cucumber Java.Scenario: Home page functionality" />
+      <item itemvalue="Gradle.shop1aTestLauncher (1)" />
       <item itemvalue="Gradle.shop1aTestLauncher" />
-      <item itemvalue="Gradle.shop1aTestLauncher.shop1aPage" />
+      <item itemvalue="JUnit.shop1aTestLauncher" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.shop1aTestLauncher" />
         <item itemvalue="Cucumber Java.Feature: shop1aTesting" />
+        <item itemvalue="Gradle.shop1aTestLauncher (1)" />
         <item itemvalue="Cucumber Java.Scenario: Home page functionality" />
-        <item itemvalue="Gradle.shop1aTestLauncher.shop1aPage" />
         <item itemvalue="Gradle.shop1aTestLauncher" />
       </list>
     </recent_temporary>
@@ -180,7 +205,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670719772933</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Final project">
+      <created>1670779581211</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1670779581211</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -197,15 +229,21 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="w" />
     <MESSAGE value="test" />
-    <option name="LAST_COMMIT_MESSAGE" value="test" />
+    <MESSAGE value="Final project" />
+    <option name="LAST_COMMIT_MESSAGE" value="Final project" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/shop1aTesting/pages/goodsPage.java</url>
-          <line>47</line>
-          <option name="timeStamp" value="13" />
+          <url>file://$PROJECT_DIR$/src/test/java/shop1aTesting/launcher/shop1aTestLauncher.java</url>
+          <line>12</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/shop1aTesting/pages/UserInfoPage.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="35" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

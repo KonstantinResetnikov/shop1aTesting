@@ -7,7 +7,7 @@ import com.codeborne.selenide.SelenideElement;
 import static com.codeborne.selenide.Selenide.*;
 import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
 
-public class homePage {
+public class HomePage {
     private static final String baseUrl = "https://www.1a.lv/";
     private static final SelenideElement closePopUps = $x("//a[@class='c-button-inverse']");
     private static final SelenideElement categoryBar = $x("//li[@class='submenu-lvl1__list-item color-theme-21 submenu-lvl1__list-item--has-child']");
@@ -19,7 +19,7 @@ public class homePage {
         open(baseUrl);
         $(closePopUps).click();
         getWebDriver().manage().window().maximize();
-        Configuration.holdBrowserOpen = true;
+        Configuration.holdBrowserOpen = false;
     }
 
     public static void selectCategory() {
