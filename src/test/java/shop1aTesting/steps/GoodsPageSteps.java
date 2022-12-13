@@ -1,9 +1,9 @@
 package shop1aTesting.steps;
 
 import io.cucumber.java.en.And;
-import io.cucumber.java.en.Then;
 import shop1aTesting.pages.GoodsPage;
 import shop1aTesting.pages.ItemPage;
+import static com.codeborne.selenide.Selenide.sleep;
 
 public class GoodsPageSteps {
     @And("I select desired category")
@@ -22,7 +22,7 @@ public class GoodsPageSteps {
         GoodsPage.goodsSelect();
     }
 
-    @Then("I validate item name and price")
+    @And("I validate item name and price")
     public void userValidateItemNameAndPrice() {
         ItemPage.validateItem();
     }

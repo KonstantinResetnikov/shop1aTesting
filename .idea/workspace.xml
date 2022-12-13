@@ -4,25 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="99afb1dc-fdd9-4d14-b94c-cd3f0670d919" name="Changes" comment="Final project">
-      <change afterPath="$PROJECT_DIR$/src/test/java/shop1aTesting/launcher/shop1aTestLauncher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/shop1aTesting/models/DeliveryPriceModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/shop1aTesting/models/ItemModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/shop1aTesting/models/UserModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/shop1aTesting/pages/DeliveryPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/shop1aTesting/pages/ItemPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/shop1aTesting/steps/DeliveryPageSteps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/shop1aTesting/steps/UserInfoSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+    <list default="true" id="99afb1dc-fdd9-4d14-b94c-cd3f0670d919" name="Changes" comment="Fix">
+      <change afterPath="$PROJECT_DIR$/src/test/java/shop1aTesting/pages/BasePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/shop1aTesting/pages/cartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/shop1aTesting/pages/UserInfoPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/shop1aTesting/pages/goodsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/shop1aTesting/pages/GoodsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/shop1aTesting/pages/homePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/shop1aTesting/pages/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/shop1aTesting/shop1aTestLauncher.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/shop1aTesting/steps/cartPageSteps.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/shop1aTesting/steps/goodsPageSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/shop1aTesting/steps/GoodsPageSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/shop1aTesting/steps/homePageSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/shop1aTesting/steps/HomePageSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/shop1aTesting.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/shop1aCart.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/shop1aTesting/models/UserModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/shop1aTesting/models/UserModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/shop1aTesting/pages/GoodsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/shop1aTesting/pages/GoodsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/shop1aTesting/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/shop1aTesting/pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/shop1aTesting/steps/GoodsPageSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/shop1aTesting/steps/GoodsPageSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/shop1aTesting/steps/HomePageSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/shop1aTesting/steps/HomePageSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/shop1aCart.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/shop1aCart.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,15 +43,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/Konstantin/IdeaProjects/shop1aTest/src/test/java/shop1aTesting/steps",
-    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Konstantin/IdeaProjects/shop1aTest/src/test/java/shop1aTesting/steps&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="JUnit.shop1aTestLauncher">
     <configuration name="Feature: shop1aTesting" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
@@ -212,7 +202,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670779581211</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Fix">
+      <created>1670846615481</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1670846615481</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -230,23 +227,8 @@
     <MESSAGE value="w" />
     <MESSAGE value="test" />
     <MESSAGE value="Final project" />
-    <option name="LAST_COMMIT_MESSAGE" value="Final project" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/shop1aTesting/launcher/shop1aTestLauncher.java</url>
-          <line>12</line>
-          <option name="timeStamp" value="17" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/shop1aTesting/pages/UserInfoPage.java</url>
-          <line>36</line>
-          <option name="timeStamp" value="35" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

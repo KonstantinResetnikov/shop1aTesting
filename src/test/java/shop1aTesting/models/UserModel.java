@@ -7,4 +7,5 @@ public class UserModel {
     private String userName;
     private String userSurname;
     private String userNameSurname;
+    private String userPhone;
 }

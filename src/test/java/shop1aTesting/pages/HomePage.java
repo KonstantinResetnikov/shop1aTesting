@@ -4,6 +4,8 @@ package shop1aTesting.pages;
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
+import com.codeborne.selenide.WebDriverRunner;
+
 import static com.codeborne.selenide.Selenide.*;
 import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
 
@@ -19,7 +21,8 @@ public class HomePage {
         open(baseUrl);
         $(closePopUps).click();
         getWebDriver().manage().window().maximize();
-        Configuration.holdBrowserOpen = false;
+        Configuration.holdBrowserOpen = true;
+
     }
 
     public static void selectCategory() {
