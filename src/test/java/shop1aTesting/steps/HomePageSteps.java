@@ -3,7 +3,6 @@ package shop1aTesting.steps;
 
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
-import io.cucumber.java.en.When;
 import shop1aTesting.pages.HomePage;
 
 

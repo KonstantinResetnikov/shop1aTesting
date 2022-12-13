@@ -7,7 +7,6 @@ Feature: User testing shop cart functionality
     Given I open base url and close cookies
     And I mouse over Computer components category and selects HDD and SSD disk category
     And I select desired category
-    And I sort items by lower price
     And I select desired product
     And I validate item name and price
     When I enter "konre93@gmail.com"

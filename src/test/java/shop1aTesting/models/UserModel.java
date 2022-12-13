@@ -4,8 +4,11 @@ import lombok.Data;
 
 @Data
 public class UserModel {
-    private String userName;
-    private String userSurname;
-    private String userNameSurname;
-    private String userPhone;
-}
+    public static UserModel userModel = new UserModel();
+    public String userName;
+    public String userSurname;
+    public String userNameSurname;
+    public String userPhone;
+
+    }
+

@@ -5,12 +5,11 @@ import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
 import org.openqa.selenium.By;
-import shop1aTesting.models.DeliveryPriceModel;
-import shop1aTesting.models.UserModel;
-
 import static com.codeborne.selenide.Selenide.*;
+import static shop1aTesting.models.ItemModel.itemModel;
+import static shop1aTesting.models.UserModel.userModel;
 
-public class UserInfoPage {
+public class UserInfoPage{
 
     private static final SelenideElement enterName = $(By.id("address_first_name"));
     private static final SelenideElement enterSurname = $(By.id("address_last_name"));
@@ -19,22 +18,22 @@ public class UserInfoPage {
     private static final SelenideElement checkName = $x("//div[@class='name']");
     private static final SelenideElement checkPrice = $x("//span [@class='checkout-order-summary-total__price']");
 
-    public static DeliveryPriceModel deliveryPriceModel = new DeliveryPriceModel();
-    public static UserModel userModel = new UserModel();
 
 
-    public static void fillDelivery(String name, String surname, String phone) {
-        $(enterName).sendKeys(name);
-        $(enterSurname).sendKeys(surname);
-        $(enterPhone).sendKeys(phone);
-        $$(firstSubmit).get(1).click();
-        deliveryPriceModel.setFullPrice($(checkPrice).getText());
+    public void fillDelivery(String name, String surname, String phone) {
+
         userModel.setUserName(name);
         userModel.setUserSurname(surname);
+        userModel.setUserPhone(phone);
         userModel.setUserNameSurname(name + " " + surname);
-        $(checkName).shouldHave(Condition.exactText(userModel.getUserNameSurname()));
-        $(checkPrice).shouldHave(Condition.exactText(deliveryPriceModel.getFullPrice()));
 
+        $(enterName).sendKeys(userModel.getUserName());
+        $(enterSurname).sendKeys(userModel.getUserSurname());
+        $(enterPhone).sendKeys(userModel.getUserPhone());
+        $$(firstSubmit).get(0).click();
+        $$(firstSubmit).get(1).click();
+        $(checkName).shouldHave(Condition.exactText(userModel.getUserNameSurname()));
+        $(checkPrice).shouldHave(Condition.exactText(itemModel.getGoodsPrice()));
     }
 
 }
