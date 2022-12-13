@@ -5,19 +5,9 @@ package shop1aTesting.pages;
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
-import org.junit.jupiter.api.Timeout;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
-import java.util.concurrent.TimeUnit;
-
-import static com.codeborne.selenide.Configuration.pageLoadTimeout;
-import static com.codeborne.selenide.Configuration.timeout;
 import static com.codeborne.selenide.Selenide.*;
-import static shop1aTesting.pages.BasePage.chromeDriver;
+
 
 public class GoodsPage extends BasePage {
     public static final SelenideElement ssdDisk = $x("//img[contains(@title,'(SSD)')]");
@@ -32,12 +22,6 @@ public class GoodsPage extends BasePage {
 
 
     public static void ssdDiskSelect() {
-
-
-      // new WebDriverWait(chromeDriver, Duration.ofSeconds(10));
-//        WebDriver.Timeouts timeouts = ChromeDriver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-       // chromeDriver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-
         $(ssdDisk).shouldHave(Condition.exactText("")).click();
         $(diskCapacity).shouldBe(Condition.visible, Duration.ofMillis(5000)).click();
 
