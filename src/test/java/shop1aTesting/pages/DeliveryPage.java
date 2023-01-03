@@ -10,7 +10,7 @@ import static com.codeborne.selenide.Selenide.$x;
 public class DeliveryPage {
     private static final ElementsCollection enterEmail = $$(By.id("user_email"));
     private static final ElementsCollection acceptEmailButton = $$x("//input[@class='users-session-form__submit']");
-    private static final SelenideElement selectDelivery = $("input[name='shipping_unused'][value='2']");
+    private static final SelenideElement selectDeliveryShop = $("input[name='shipping_unused'][value='2']");
     private static final SelenideElement selectShop = $x("//input[@value='3543']");
 
 
@@ -21,7 +21,7 @@ public class DeliveryPage {
     }
 
     public static void selectDelivery() {
-        $(selectDelivery).click();
+        $(selectDeliveryShop).click();
         $(selectShop).click();
 
     }

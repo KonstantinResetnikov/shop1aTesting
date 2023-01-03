@@ -6,8 +6,9 @@ import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
 import org.openqa.selenium.By;
 import static com.codeborne.selenide.Selenide.*;
-import static shop1aTesting.models.ItemModel.itemModel;
+
 import static shop1aTesting.models.UserModel.userModel;
+import static shop1aTesting.steps.GoodsPageSteps.itemModel;
 
 public class UserInfoPage{
 

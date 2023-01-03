@@ -4,7 +4,8 @@ import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.$x;
-import static shop1aTesting.models.ItemModel.itemModel;
+import static shop1aTesting.steps.GoodsPageSteps.itemModel;
+
 
 public class ItemPage {
     private static final SelenideElement toPaymentPage =$x("//input[@class='main-button cart-main-button cart-main-button--large']");

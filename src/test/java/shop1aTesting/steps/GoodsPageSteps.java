@@ -1,11 +1,13 @@
 package shop1aTesting.steps;
 
 import io.cucumber.java.en.And;
+import shop1aTesting.models.ItemModel;
 import shop1aTesting.pages.GoodsPage;
 import shop1aTesting.pages.ItemPage;
 
 
 public class GoodsPageSteps {
+    public static ItemModel itemModel = new ItemModel();
     @And("I select desired category")
     public void userSelectsSSDDiskCategory() {
         GoodsPage.ssdDiskSelect();
@@ -16,6 +18,7 @@ public class GoodsPageSteps {
     }
 
     @And("I validate item name and price")
+
     public void userValidateItemNameAndPrice() {
         ItemPage itemPage = new ItemPage();
         itemPage.validateItem();
